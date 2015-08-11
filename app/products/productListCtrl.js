@@ -35,6 +35,9 @@ var app;
                         "imageUrl": "http://openclipart.org/image/300px/svg_to_png/73/rejon_Hammer.png"
                     }
                 ];
+                var newProduct = new app.domain.Product(3, "Saw", "TBX-002", new Date(2002, 3, 1), 16.95, "15 inch steel hand saw", "http://openclipart.org/image/300px/svg_to_png/27070/egore911_saw.png");
+                newProduct.price = newProduct.calculateDiscount(10);
+                this.products.push(newProduct);
             }
             ProductListCtrl.prototype.toggleImage = function () {
                 this.showImage = !this.showImage;
