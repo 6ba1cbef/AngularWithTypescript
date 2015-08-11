@@ -1,0 +1,10 @@
+install package "atom-typescript"
+
+to install tsd:
+  npm install -g tsd
+
+to add types for angular to typings folder:
+  tsd install angular --resolve --save
+
+to add types after getting from source control:
+  tsd install
