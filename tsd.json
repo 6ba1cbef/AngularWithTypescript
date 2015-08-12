@@ -13,6 +13,9 @@
     },
     "angularjs/angular-resource.d.ts": {
       "commit": "da995655d8f810e5e860d908bf5422ee59ef8ab6"
+    },
+    "angularjs/angular-mocks.d.ts": {
+      "commit": "338f9db37074d197764e95a487ddb865c5f2d73c"
     }
   }
 }

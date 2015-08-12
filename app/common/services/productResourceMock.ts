@@ -1,4 +1,3 @@
-/*
 module app.common {
 
     var mockResource = angular
@@ -6,7 +5,7 @@ module app.common {
             ["ngMockE2E"]);
 
     mockResource.run(mockRun);
-    
+
     mockRun.$inject = ["$httpBackend"];
     function mockRun($httpBackend: ng.IHttpBackendService) : void {
         var products: app.domain.IProduct[] = [];
@@ -26,12 +25,12 @@ module app.common {
             "15-inch steel blade hand saw",
             "http://openclipart.org/image/300px/svg_to_png/27070/egore911_saw.png");
         products.push(product);
- 
+
          product = new app.domain.Product(4, "Hammer", "TBX-0048", new Date(2013, 4, 21), 8.99,
             "Curved claw steel hammer",
             "http://openclipart.org/image/300px/svg_to_png/73/rejon_Hammer.png");
         products.push(product);
-        
+
          product = new app.domain.Product(5, "Video Game Controller", "GMG-0042", new Date(2012, 9, 25), 35.95,
             "Standard five-button video game controller",
             "http://openclipart.org/image/300px/svg_to_png/120337/xbox-controller_01.png");
@@ -63,9 +62,8 @@ module app.common {
         $httpBackend.whenGET(/api/).respond(function(method, url, data) {
             return [200, products, {}];
         });
-                
+
         // Pass through any requests for application files
         $httpBackend.whenGET(/app/).passThrough();
     }
 }
-*/

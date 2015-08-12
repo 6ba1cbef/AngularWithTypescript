@@ -1,3 +1,3 @@
 module app {
-  angular.module("productManagement", []);
+  angular.module("productManagement", ["common.services", "productResourceMock"]);
 }

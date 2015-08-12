@@ -6,6 +6,7 @@ to install tsd:
 to add types for angular to typings folder:
   tsd install angular --resolve --save
   tsd install angular-resource --save
+  tsd install angular-mocks --save
 
 to add types after getting from source control:
   tsd install
