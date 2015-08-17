@@ -22,6 +22,9 @@
 
 	// args is the HelloWorld program to compile.
 	//"args": ["HelloWorld.ts"],
+	
+	// Tell the tsc compiler to use the tsconfig.json from the open folder.
+	"args": ["-p", "."],
 
 	// use the standard tsc problem matcher to find compile problems
 	// in the output.
