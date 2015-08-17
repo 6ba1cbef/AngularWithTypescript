@@ -17,7 +17,7 @@ var app;
             ProductListCtrl.prototype.toggleImage = function () {
                 this.showImage = !this.showImage;
             };
-            ProductListCtrl.$inject = ["dataAccessService"];
+            ProductListCtrl.$inject = ["dataAccessService"]; // protect from minification
             return ProductListCtrl;
         })();
         angular

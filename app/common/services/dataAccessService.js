@@ -9,7 +9,7 @@ var app;
             DataAccessService.prototype.getProductResource = function () {
                 return this.$resource("/api/products/:productId");
             };
-            DataAccessService.$inject = ["$resource"];
+            DataAccessService.$inject = ["$resource"]; // protect from minification
             return DataAccessService;
         })();
         common.DataAccessService = DataAccessService;
