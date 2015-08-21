@@ -12,3 +12,5 @@ to add types after getting from source control:
   tsd install
 
 --------------------------------
+
+npm install ts-loader --save
