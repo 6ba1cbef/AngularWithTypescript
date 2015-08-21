@@ -1,0 +1,27 @@
+{
+  "name": "angularwithtypescript",
+  "version": "1.0.0",
+  "description": "angular test",
+  "main": "app/app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hubbins/AngularWithTypescript.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hubbins/AngularWithTypescript/issues"
+  },
+  "homepage": "https://github.com/hubbins/AngularWithTypescript#readme",
+  "dependencies": {
+    "ts-loader": "^0.5.0"
+  },
+  "devDependencies": {
+    "ts-loader": "^0.5.0",
+    "typescript": "^1.5.3",
+    "webpack": "^1.11.0"
+  }
+}
