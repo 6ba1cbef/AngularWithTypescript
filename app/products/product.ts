@@ -28,3 +28,4 @@ module app.domain {
 
   }
 }
+export = app.domain;

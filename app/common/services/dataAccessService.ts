@@ -20,3 +20,4 @@ module app.common {
     .module("common.services")
     .service("dataAccessService", DataAccessService);
 }
+export = DataAccessService;

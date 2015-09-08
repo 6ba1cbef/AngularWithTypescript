@@ -1,6 +1,4 @@
-
 module app.ProductList {
-
   interface IProductListModel {
     title: string;
     showImage: boolean;

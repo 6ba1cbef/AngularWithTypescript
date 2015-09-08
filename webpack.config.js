@@ -2,21 +2,21 @@ var path = require('path');
 var webpack = require('webpack');
 
 module.exports = {
-    entry: './app/app.ts',
+    entry: './app/bootstrap.js',
     output: {
-        path: __dirname,
+        path: 'dist',
         filename: 'bundle.js'
     },
     devtool: 'source-map',
     resolve: {
-        extensions: ['', '.webpack.js', '.web.js', '.ts', '.js']
+        extensions: ['', '.webpack.js', '.web.js', '.js']
     },
     include: [
         path.resolve(__dirname, 'app'),
     ],
     module: {
         loaders: [
-            { test: /\.ts$/, loader: 'ts-loader' }
+            { test: /\.html$/, loader: 'html-loader'}
         ]
     },
     plugins: [
@@ -25,5 +25,8 @@ module.exports = {
     ],
     stats: {
         colors: true
+    },
+    externals: {
+        app: 'app'
     }
 };

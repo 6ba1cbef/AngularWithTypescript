@@ -3,7 +3,8 @@ module app {
                               ["ngRoute", 
                                 "common.services", 
                                 "productResourceMock"]);
-                                
+ 
+  var main = angular.module('productManagement');
   main.config(routeConfig);
   
   routeConfig.$inject = ["$routeProvider"];
@@ -13,11 +14,13 @@ module app {
       .when("/productList", 
         {
           templateUrl: "/app/products/productListView.html",
+          template: require('./products/productListView.html'),
           controller: "ProductListCtrl as vm"
         })
       .when("/productDetail/:productId",
         {
           templateUrl: "/app/products/productDetailView.html",
+          template: require('./products/productDetailView.html'),
           controller: "ProductDetailCtrl as vm"
         })
       .otherwise("/productList");

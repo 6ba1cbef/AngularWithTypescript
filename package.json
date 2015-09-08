@@ -16,11 +16,14 @@
     "url": "https://github.com/hubbins/AngularWithTypescript/issues"
   },
   "homepage": "https://github.com/hubbins/AngularWithTypescript#readme",
-  "dependencies": {
-    "ts-loader": "^0.5.0"
-  },
+  "dependencies": {},
   "devDependencies": {
+    "exports-loader": "^0.6.2",
+    "expose-loader": "^0.7.0",
+    "html-loader": "^0.3.0",
+    "imports-loader": "^0.6.4",
     "ts-loader": "^0.5.0",
+    "tsd": "^0.6.3",
     "typescript": "^1.5.3",
     "webpack": "^1.11.0"
   }
